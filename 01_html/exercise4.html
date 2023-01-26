@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise4</title>
+</head>
+<body>
+    <div id="header" class="division">
+        <h1>Park's Cafe</h1>
+        <span>주문자의 이름을 입력하세요</span>
+        <input type="text" name="username" />
+        <hr />
+    </div>
+    <div id="group order" class="division">
+        <h1>단체 주문</h1>
+        <input type="checkbox" name="menu" value="coffee"/>커피
+        <input type="checkbox" name="menu" value="tea"/>차
+        <input type="checkbox" name="menu" value="latte"/>라떼
+        <p>주문 날짜 입력</p>
+        <input type="date" name="date" />
+        <hr />
+    </div>
+    <div id="individual order" class="division">
+        <h1>개별 주문</h1>
+        <input type="radio" name="menu" value="coffe"/>커피
+        <input type="radio" name="menu" value="tea"/>차
+        <input type="radio" name="menu" value="latte"/>라떼
+        <p>주문 날짜 및 시간 입력</p>
+        <input type="datetime-local" name="datetime"/>
+    </div>
+</body>
+</html>

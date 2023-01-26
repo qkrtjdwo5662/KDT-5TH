@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select name="menu">
+        <optgroup label="coffee">
+            <option value="americano">아메리카노</option>
+            <option value="latte">라떼</option>
+            <option value="capuccino" disabled>카푸치노</option>
+        </optgroup>
+        <optgroup label="other">
+            <option value="lemonade">레몬에이드</option>
+            <option value="hotchoco">핫 초코</option>
+            <option value="smoothie" selected>스무디</option>
+        </optgroup>
+    </select>
+    <br />
+    <br />
+    <input type="button" value="클릭해라"/>
+    <Button>Click</Button>
+    <br />
+    <input type="text" placeholder="id"/>
+    <br />
+    <input type="password" placeholder="password"/>
+    <br />
+    <input type="checkbox" name="menu" value="coffee" /> 커피
+    <input type="checkbox" name="menu" value="tea" /> 차
+    <input type="checkbox" name="menu" value="smoothie" checked/> 스무디
+    <!-- checkbox는 여러개 값 선택 가능 -->
+    <br />
+    <input type="radio" name="menu" value="coffee"/> 커피
+    <input type="radio" name="menu" value="tea" checked/> 차
+    <input type="radio" name="menu" value="smoothie"/> 스무디
+    <input type="radio" name="othermenu" value="water"/> 물
+    <!-- radio버튼은 동일한 name끼리는 하나의 값만 선책이 가능함 -->
+    <!-- 당연하게도 다른 name의 값 선택은 서로의 영향을 미치지 않음 -->
+    <br />
+    <input type="date" name="date" />날짜
+    <br />
+    <input type="datetime-local" name="datetime" />날짜 & 시간
+    <br />
+    <input type="color" name="color"/> 색깔
+</body>
+</html>
