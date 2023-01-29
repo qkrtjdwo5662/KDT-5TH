@@ -1,0 +1,10 @@
+@import url("./style2.css");
+
+p {
+    color: cadetblue;
+    background-color: darkkhaki;
+}
+span {
+    color: blue;
+    background-color: whitesmoke;
+}
