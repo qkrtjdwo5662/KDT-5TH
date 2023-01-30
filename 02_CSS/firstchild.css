@@ -1,0 +1,22 @@
+.fruits span:first-child{
+    color : red;
+}
+.fruits div:first-child{
+    background-color: red;
+}
+.fruits span:last-child{
+    color: green;
+}
+
+.fruits h3:last-child{
+    color:blue;
+}
+.fruits span:nth-child(2){
+    color: blueviolet;
+}
+.fruits *:nth-child(2n){
+    background-color: aquamarine;
+}
+.fruits *:not(span){
+    background-color: blue;
+}

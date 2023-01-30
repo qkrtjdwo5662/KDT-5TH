@@ -1,0 +1,10 @@
+/* 복합 선택자 관련*/
+
+/* 동등한 선택자의 경우 span.orange와 같은 형태로 중첩가능 */
+.orange{
+    color : orange;
+}
+
+span.orange{
+    background-color: azure;
+}

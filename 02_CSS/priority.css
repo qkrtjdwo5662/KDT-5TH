@@ -1,0 +1,28 @@
+#item {
+    background-color: red !important;
+}
+/* important > inline */
+
+.list{
+    background-color: aqua;
+}
+
+/* ------------------------------- */
+
+.third{
+    background-color: blue;
+}
+
+li{
+    background-color: bisque;
+}
+/* class > tag  */
+
+/* ----------------------- */
+
+.ol li:first-child{
+    background-color: cadetblue;
+}
+body .ol li.item {
+    background-color:blue;
+}

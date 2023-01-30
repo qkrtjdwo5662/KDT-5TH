@@ -1,0 +1,22 @@
+.zoo *:nth-child(2n){
+    background-color: orange;
+}
+/* zoo child 2n인 요소 */
+
+.zoo *:first-child{
+    background-color: purple;
+}
+/* zoo의 첫번째 자식 */
+.zoo *:not(p){
+    background-color: green;
+}
+/* zoo의 자식중 p가 아닌 것 */
+.zoo *:last-child:hover{
+    background-color: red;
+
+}
+/* zoo의 자식중 마지막요소 */
+.zoo *:nth-child(3){
+    background-color: blue;
+}
+/* zoo의 3번째 자식 */

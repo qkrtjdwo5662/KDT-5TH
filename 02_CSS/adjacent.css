@@ -1,0 +1,8 @@
+/* 인접 형제 선택자관련 */
+/* 즉시 바로 붙어있는 형제까지만 범위 */
+.orange + li{
+    background-color: yellow;
+}
+.orange + a{
+    color : red;
+}

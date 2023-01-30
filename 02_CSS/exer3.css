@@ -1,0 +1,21 @@
+.lion {
+    color:white;
+}/* 선택자 */
+p.lion{
+    background-color: red;
+}/* 중첩 선택자 */
+.zoo li.lion{
+    background-color: green;
+}/* 후손 선택자 */
+.zoo #tiger{
+    background-color: yellow;
+}/* 선택자 */
+.zoo .lion{
+    font-weight: bold;
+}/* 후손 선택자 */
+.zoo li.lion ~ li{
+    background-color: orange;
+}/* 일반 형제 선택자  */
+#tiger + li{
+    background-color: skyblue;
+}/* 인접 형제 선택자 */

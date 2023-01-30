@@ -1,0 +1,6 @@
+div.box::before{
+    content: "앞";
+}
+div.box::after{
+    content:"뒤";
+}

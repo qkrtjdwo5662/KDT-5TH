@@ -1,0 +1,9 @@
+[disabled]{
+    background-color: red;
+}
+[name="id"]{
+    background-color: yellow;
+}
+[id="password"]{
+    background-color: aquamarine;
+}
