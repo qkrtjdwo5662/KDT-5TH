@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.parent1{
+            display: flex;
+            max-width: 100%;
+            height: 300px;
+            background-color: blue;
+        }
+        div.parent2{
+            margin-top: 10px;
+            display: block;
+            max-width: 100%;
+            height: 300px;
+            background-color: blue;
+        }
+        div.parent3{
+            margin-top: 50px;
+            display: inline-flex;
+            max-width: 100%;
+            height: 300px;
+            background-color: blue;
+        }
+        div.child1{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+        }
+        div.child2{
+            width: 300px;
+            height: 200px;
+            background-color: orange;
+        }
+        div.child3{
+            width: 200px;
+            height: 300px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent1">
+        <div class="child1"></div>
+        <div class="child2"></div>
+        <div class="child3"></div>
+    </div>
+    <div class="parent2">
+        <div class="child1"></div>
+        <div class="child2"></div>
+        <div class="child3"></div>
+    </div>
+    <div class="parent3">
+        <div class="child1"></div>
+        <div class="child2"></div>
+        <div class="child3"></div>
+    </div>
+</body>
+</html>
+<!-- 부모요소에 display 속성 -->
+<!-- block, flex, inline-flex -->
+<!-- flex는 div-->
+<!-- inline-flex는 span-->
