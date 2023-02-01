@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.parent{
+            position: relative;
+            width: 400px;
+            height: 400px;
+            background-color: red;
+        }
+        /* 부모에 relative가 없으면 viewport를 부모로 참조함 */
+        div .child1{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+        }
+        div .child2{
+            position: absolute;
+            bottom:100px;
+            right: 20px;
+            width: 200px;
+            height: 300px;
+            background-color: yellow;
+        }
+        /* absolute는 붕띄우는 느낌 */
+        /* 크기는 그대로 */
+        div .child3{
+            width: 300px;
+            height: 200px;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child1"></div>
+        <div class="child2"></div>
+        <div class="child3"></div>
+    </div>
+</body>
+</html>

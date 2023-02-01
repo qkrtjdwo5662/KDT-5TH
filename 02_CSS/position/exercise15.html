@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 1px solid black;  
+        }
+        div.circle1{
+            background-color: aqua;
+            position: relative;
+        }
+        div.circle2{
+            background-color: beige;
+            position: absolute;
+            left: 100px;
+            top: 100px;
+
+        }
+        div.circle3{
+            background-color: black;
+            position: absolute;
+            left : 170px;
+            top : 150px
+        }
+        div.circle4{
+            background-color:purple;
+            position: absolute;
+            left: 250px;
+            top: 150px
+        }
+        div.circle5{
+            background-color: pink;
+            position:absolute ;
+            left: 320px;
+            top:150px
+        }
+        div .eye{
+            position: absolute;
+            left: 50px;
+            top: 50px;
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            z-index: 1;
+        }
+        div .eye::after{
+            content: "";
+            position: absolute;
+            left: 15px;
+            top: 15px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: black;
+            z-index: 1;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="circle1">
+        <div class="eye"></div>
+    </div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
+    <div class="circle4"></div>
+    <div class="circle5"></div>
+
+</body>
+</html>
