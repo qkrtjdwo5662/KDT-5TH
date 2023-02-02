@@ -1,9 +1,10 @@
 .container{
-    width: 100%;
     background-image: url("./images/bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    width: 100%;
+    height: 100%;
 }
 .container .heros{
     display: flex;
