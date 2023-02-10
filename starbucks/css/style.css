@@ -1,0 +1,61 @@
+body {
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    font-family: "Nanum Gothic", sans-serif;
+}
+
+.inner {
+    width: 1100px; margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+ }
+
+.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 700, "GRAD" 0, "opsz" 48;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #f6f5ef; 
+    border-bottom: 1px solid #eae7e2; 
+    border-top: 2px solid black; 
+    z-index: 1;
+}
+
+header .inner{
+    height: 120px;
+}
+
+header .inner .logo{
+    position: absolute;
+}
+
+header .inner .sub-menu{
+    display: flex;
+    justify-content: end;
+    top:6px;
+    right: 50px;
+}
+
+header .inner .sub-menu .menu{
+    display: flex;
+}
+
+header .inner .sub-menu .menu > li{
+    display: block;
+}
+
+header .inner .sub-menu .menu > li >a {}
+
+header .inner .sub-menu .search{}
+
+header .inner .sub-menu .search > input{}
+
+header .inner .sub-menu .search .material-symbols-outlined{}
+
