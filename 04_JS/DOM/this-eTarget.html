@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li onclick="showThis(this)">1</li>
+        <li onclick="showThis(this)">2</li>
+        <li onclick="showThis(this)">3</li>
+        <li onclick="showThis(this)">4</li>
+        <button class="b1" onclick="testThis(this)">1버튼</button>
+        <button class="b2" onclick="testThis(this)">2버튼</button>
+        <li class=list>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+</body>
+<script>
+    function showThis(t){
+        console.log(t);
+    }
+    const b1 = document.querySelector(".b1");
+    const b2 = document.querySelector(".b2");
+
+    function deleteThis(t){
+        t.remove();
+    }
+
+    const listEl = document.querySelector(".list");
+    listEl.addEventListener("click",function(e){
+        console.log(e);
+    })
+</script>
+</html>

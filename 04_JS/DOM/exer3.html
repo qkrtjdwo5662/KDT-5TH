@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .orange{
+            background-color: orange;
+        }
+        .skyblue{
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1" onclick="changeColor()">1</div>
+    <div class="box2">2</div>
+</body>
+<script>
+    const boxEl1 = document.querySelector(".box1");
+    const boxEl2 = document.querySelector(".box2");
+    
+    function changeColor(){
+        if(!boxEl1.classList.contains("orange") && !boxEl1.classList.contains("skyblue") ){
+            boxEl1.classList.add("orange");
+        }else if(boxEl1.classList.contains("orange")){
+            boxEl1.classList.add("skyblue");
+            boxEl1.classList.remove("orange");
+        }else{
+            boxEl1.classList.add("orange");
+            boxEl1.classList.remove("skyblue");
+        }
+    }
+
+    function checkColor2(){
+        if(!boxEl2.classList.contains("orange") && !boxEl2.classList.contains("skyblue") ){
+            boxEl2.classList.add("orange");
+        }else if(boxEl2.classList.contains("orange")){
+            boxEl2.classList.add("skyblue");
+            boxEl2.classList.remove("orange");
+        }else{
+            boxEl2.classList.add("orange");
+            boxEl2.classList.remove("skyblue");
+        }
+    }
+    boxEl2.addEventListener("click",checkColor2);
+    
+    
+
+    
+</script>
+</html>

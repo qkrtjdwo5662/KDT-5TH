@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">box</div>
+    <input type="text"/>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+
+<script>
+    const boxEl = document.querySelector(".box");
+    const inputEl = document.querySelector("input");
+
+    boxEl.setAttribute("style", "background-color: orange"); // 속성 값 설정
+    boxEl.setAttribute("style", "height: 300px"); // 속성을 덮어 씌우기의 개념
+    boxEl.setAttribute("style", "background-color: orange; height: 300px"); // 같이 쓰려면 한번에 쓰기
+
+    console.log(boxEl.textContent); // contents의 text
+    boxEl.textContent = "바꿈"; // text 교체
+    console.log(boxEl.textContent); 
+
+    //--------------------------------------------------------
+
+    const boxEl1 = document.querySelector(".box1");
+    const boxEl2 = document.querySelector(".box2");
+
+    boxEl1.innerHTML ="<button>버튼</button>";
+    boxEl2.innerText ="<button>버튼</button>";
+
+    inputEl.setAttribute("placeholder", "통합 검색");
+
+</script>
+</html>
