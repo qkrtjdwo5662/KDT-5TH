@@ -6,41 +6,47 @@ let inputField = inputTask.value;
 
 console.log(inputField);
 
+function deleteTask(t){
+    t.parentNode.remove();
+}
 
-
-
-// if(check.checked==true){
-//     li.
-// }
-
-addBtn.addEventListener("click" ,function(){
+function addList(){
     const li = document.createElement("li");
     const check = document.createElement("input");
-    const del = document.createElement("input");
+    const delBtn = document.createElement("button");
 
     check.setAttribute("type", "checkbox");
-    del.setAttribute("type", "button");
-    del.setAttribute("value","삭제");
+    
+    delBtn.textContent = "삭제";
     
     if(inputTask.value===""){
         inputTask.placeholder="내용을 입력하세요";
-    }else{
-        todoList.append(li);
-        li.appendChild(check);
-        li.append(inputTask.value);
-        li.appendChild(del);
-    }    
+        return;
+    }
 
-    checkBtn.addEventListener("click", function () {
-        if (checkBtn.checked === true) {
-        checkBtn.parentNode.style.textDecoration = "line-through";
-        } else {
-        checkBtn.parentNode.style.textDecoration = "none";
+    todoList.append(li);
+    li.appendChild(check);
+    li.append(inputTask.value);
+    inputTask.value = "";
+    li.appendChild(delBtn);   
+
+
+    check.addEventListener("click", function(){
+        if(check.checked===true){
+            check.parentNode.style.textDecoration="line-through"; 
+        } else{
+            check.parentNode.style.textDecoration="none"; 
         }
-        });
-})
+    })
 
-function check(){
+    // delBtn.addEventListener("click", function(e){
+    //     e.target.parentNode.remove();
+    // });
+    delBtn.setAttribute("onclick", "deleteTask(this)");
 
 }
+
+
+addBtn.addEventListener("click" ,addList);
+
 
