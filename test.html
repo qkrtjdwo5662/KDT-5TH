@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 100%;
+            height: 1000px;
+        }
+        div{
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+    <script>
+        window.localStorage.setItem('darkmode', 'light');
+        const dark = window.localStorage.getItem("darkmode");
+        window.onload() = function(){
+            if(dark=="dark"){
+                
+            }
+        }
+    </script>
+</head>
+<body>
+     <input type="checkbox"> 
+    
+    <script>
+        const body = document.querySelector("body");
+
+        const cb = document.querySelector("input");
+
+        cb.addEventListener("click", function(){
+            if(cb.checked===true){
+            // body.setAttribute("style","background-color : black");
+                window.localStorage.setItem('darkmode', 'dark');
+            }else{
+                window.localStorage.setItem('darkmode', 'light');
+            }
+        })
+        function ChangeColor(){
+            if(dark=='dark'){
+            body.setAttribute("style","background-color : black");
+            }
+            else body.setAttribute("style","background-color : white");
+        }
+        
+        
+
+        const park = {
+            name: "park",
+            isOld: true,
+            hobby:["aaa","bbb","cccc"]
+        }
+
+        const jsonpark = JSON.stringify(park);
+        console.log(jsonpark);
+        window.localStorage.setItem('park', jsonpark);
+
+    
+        // console.log(window.localStorage.length);
+        // console.log(window.localStorage.key(0));
+
+        // const jsonparsepark = JSON.parse(jsonpark);
+        // console.log(jsonparsepark);
+    </script>
+</body>
+</html>

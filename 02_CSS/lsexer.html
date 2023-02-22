@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.localStorage.setItem("num",1);
+        window.localStorage.setItem("fname","seongjae");
+        window.localStorage.setItem("lname","park");
+        window.localStorage.setItem("gender","m");
+        window.localStorage.setItem("phone","galaxy");
+
+    </script>
+</head>
+<body>
+    
+</body>
+<script>
+    for(let i=0; i<window.localStorage.length; i++){
+        console.log(window.localStorage.key(i)+" "+window.localStorage.getItem(window.localStorage.key(i)));
+    }
+    window.localStorage.clear();
+</script>
+</html>
