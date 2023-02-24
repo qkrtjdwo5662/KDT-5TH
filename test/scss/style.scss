@@ -7,6 +7,7 @@
 
 $font-color: #595959;
 
+
 header {
     position: relative;
     z-index: 1;
@@ -14,7 +15,7 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    // border-bottom: 1px solid #222222;
+    border-bottom: 1px solid #000000;
     padding: 5vh 5vw;
 
     h1 {
@@ -33,7 +34,7 @@ header {
 
             a {
                 font: bold 20px/1 'Dancing Script';
-                text-shadow: -1px 0 , 0 1px #999, 1px 0 #999;
+                text-shadow: -1px 0, 0 1px #999, 1px 0 #999;
                 color: $font-color;
                 letter-spacing: 1px;
             }
@@ -52,39 +53,99 @@ header {
             }
         }
     }
-    #snb{
+
+    #snb {
         display: none;
     }
-    
+
     .btn-menu {
         display: none;
-        color:$font-color;
+        color: $font-color;
     }
 }
 
-figure{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    overflow: hidden;
+section {
+    #container {}
 
-    video {
+    #modal {
+        display: none;
         width: 100%;
         height: 100%;
-        object-fit: cover;
-        opacity: 0;
-        transition: 2s;
+        position: absolute;
+        left: 0;
+        top: 200px;
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.25);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        // backdrop-filter: blur(1.5px);
+        // -webkit-backdrop-filter: blur(1.5px);
+        border-radius: 10px;
+
+        .modal-window {
+            background: #141414;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            // backdrop-filter: blur(13.5px);
+            // -webkit-backdrop-filter: blur(13.5px);
+            border-radius: 10px;
+            border: 1px solid black;
+            width: 850px;
+            position: relative;
+            
+            // padding: 10px;
+
+
+            
+
+            .content {
+                position: relative;
+                text-shadow: 1px 1px 2px gray;
+                color: white;
+                .close-area {
+                    width: 50px;
+                    height: 50px;
+                    position: absolute;
+                    display: block;
+                    cursor: pointer;
+                    color: white;
+                    background-color: black;
+                    z-index: 1;
+                    right: 10px;
+                    top: 10px;
+                    border-radius: 50%;
+                    text-align: center;
+                    line-height: 50px;
+                    font-size: 25px;
+                }
+                .content-image{
+                    
+                    background-repeat: no-repeat;
+                    // background: linear-gradient(0deg,#181818,transparent 50%);
+                    background: linear-gradient(45deg,rgba(0,0,0,.6),rgba(0,0,0,.4) 15%,transparent 40%);
+                    background-image: url("../ex.jpeg");
+                    background-size: cover;
+                    width: 100%;
+                    height: 500px;
+                    // background: linear-gradient(45deg,rgba(0,0,0,.6),rgba(0,0,0,.4) 15%,transparent 40%)
+                    img{
+                        // background: linear-gradient(45deg,rgba(0,0,0,.6),rgba(0,0,0,.4) 15%,transparent 40%);
+                        position: relative;
+                        width: 100%;
+                        border-radius: 10px 10px 0 0;
+                        object-fit: cover;
+                        
+                    }
+                    
+                    
+                }
+                .content-text{
+                    margin: 20px 20px 0 20px;
+                }
+
+            }
+        }
     }
-
-    
 }
 
-.hide{
-    display: none;
-}
-
-.animate{
-    opacity: 1;
-}

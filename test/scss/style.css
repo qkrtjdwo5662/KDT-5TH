@@ -11,7 +11,10 @@ ul, ol {
 
 a {
   text-decoration: none;
-  color: #595959;
+}
+
+body {
+  background-color: black;
 }
 
 header {
@@ -21,6 +24,7 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  border-bottom: 1px solid #000000;
   padding: 5vh 5vw;
 }
 header h1 a {
@@ -57,25 +61,64 @@ header .btn-menu {
   color: #595959;
 }
 
-figure {
+section #modal {
+  display: none;
+  width: 100%;
+  height: 100%;
   position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
   left: 0;
-  overflow: hidden;
+  top: 200px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 10px;
 }
-figure video {
+section #modal .modal-window {
+  background: #141414;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 10px;
+  border: 1px solid black;
+  width: 850px;
+  position: relative;
+}
+section #modal .modal-window .content {
+  position: relative;
+  text-shadow: 1px 1px 2px gray;
+  color: white;
+}
+section #modal .modal-window .content .close-area {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  display: block;
+  cursor: pointer;
+  color: white;
+  background-color: black;
+  z-index: 1;
+  right: 10px;
+  top: 10px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 25px;
+}
+section #modal .modal-window .content .content-image {
+  background-repeat: no-repeat;
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4) 15%, transparent 40%);
+  background-image: url("../ex.jpeg");
+  background-size: cover;
   width: 100%;
-  height: 100%;
+  height: 500px;
+}
+section #modal .modal-window .content .content-image img {
+  position: relative;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
   -o-object-fit: cover;
      object-fit: cover;
 }
-
-.hide {
-  display: none;
-}
-
-.animate {
-  opacity: 1;
+section #modal .modal-window .content .content-text {
+  margin: 20px 20px 0 20px;
 }/*# sourceMappingURL=style.css.map */

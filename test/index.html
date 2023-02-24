@@ -11,9 +11,12 @@
 
     <!-- main js -->
     <script defer src="./js/main.js"></script>
+
+    <!-- icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
-    <header class="header hide">
+    <header class="header">
         <h1><a href="#">Be lost in thought</a></h1>
         
         <ul id="gnb">
@@ -45,10 +48,43 @@
             </ul> 
         </div>
     </header>
+    <section>
+        <div id="container">
+            <h2>Lorem Ipsum</h2>
+            <button id="btn-modal">모달 창 열기 버튼</button>
+            <div id="lorem-ipsum"></div>
+        </div>
 
-    <figure>
-        <video src="./video.mp4#t=0,5" autoplay muted ></video>
-        <div class="div hide">아아아아아</div>
-    </figure>
+        <div id="modal" class="modal-overlay">
+            <div class="modal-window">
+                <!-- <div class="title">
+                    <h2>test modal</h2>
+                </div> -->
+                
+                <div class="content">
+                    <div class="close-area">
+                        X
+                    </div>
+                    <div class="content-image">
+                        <!-- <img class="image" src="./ex.jpeg" /> -->
+                    </div>
+                    <div class="content-text">
+                        <h2>ALBUM</h2>
+                        <br />
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae rerum itaque, vero officiis deserunt mollitia error pariatur eius in fugit dolorem iusto. Omnis doloribus sequi dolorum ea? Aliquam, neque reprehenderit.</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem officiis blanditiis ipsam, praesentium corrupti officia similique non eius quaerat hic quis beatae culpa repudiandae quidem amet? Quos suscipit maiores iure!</p>
+                    </div>
+                    <!-- <div class="img"></div> -->
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        const loremIpsum = document.getElementById("lorem-ipsum")
+        fetch("https://baconipsum.com/api/?type=all-meat&paras=200&format=html")
+            .then(response => response.text())
+            .then(result => loremIpsum.innerHTML = result)
+    </script>
 </body>
 </html>
