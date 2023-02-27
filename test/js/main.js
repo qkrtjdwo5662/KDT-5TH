@@ -24,10 +24,12 @@ const modal = document.getElementById("modal")
 const btnModal = document.getElementById("btn-modal")
 btnModal.addEventListener("click", e => {
     modal.style.display = "flex"
+    document.querySelector("body").style.backgroundColor="rgba(8,8,8,0.75)";
 })
 
 
 const closeBtn = modal.querySelector(".close-area")
 closeBtn.addEventListener("click", e => {
     modal.style.display = "none"
+    document.querySelector("body").style.backgroundColor="";
 })
