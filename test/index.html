@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/1e40bbad3e.js" crossorigin="anonymous"></script>
+
   <!-- main css -->
   <link rel="stylesheet" href="./scss/style.css" />
 
@@ -60,8 +63,6 @@
 
     <div id="modal" class="modal-overlay">
       <div class="modal-window">
-
-        
           <div class="close-area">
             X
           </div>
@@ -124,12 +125,23 @@
               <div class="time">time</div>
             </div>
           </div>
-
           
-
-        
+          
       </div>
     </div>
+    <div class="audio-container hidden" id="audio-container">
+      <div class="progress-container">
+        <div class="progress"></div>
+      </div>
+      <!-- <audio src="../test/music/music/cardio.mp3" loop="loop" >
+      </audio> -->
+      <ul class="control">
+        <li class="pause"><i class="fas fa-pause"></i></li>
+        <li class="play"><i class="fas fa-play"></i></li>
+        <li class="reload"><i class="fas fa-redo-alt"></i></li>
+    </ul>
+    </div>
+
   </section>
   <script>
     const loremIpsum = document.getElementById("lorem-ipsum")
