@@ -1,16 +1,14 @@
-const numbers=[1,2,3,4,5,6];
+let a = 12;
+let b = 20;
 
-const indexArr = numbers.filter(function (index, item, og){
-    console.log(item);
-    return item >3;
 
-})
+function abc(a, b){
+    for(let i=2; i<=a&& i<=b; i++){
+        if(a%i==0 && b%i==0){
+            min = i;
+        }
+    }
+    return min
+}
 
-console.log(indexArr);
-
-const itemArr = numbers.filter(function (item, index, og){
-    console.log(item);
-    return item >3;
-})
-
-console.log(itemArr);
+console.log(abc(a,b) * a/abc(a,b)* b/abc(a,b));
